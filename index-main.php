@@ -13,6 +13,13 @@ if (isset($_SESSION['email'])) {
 
   <title>Restaurantly</title>
 
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
   <!-- Main Css File -->
   <link rel="stylesheet" href="./assets/css/style.css">
   
@@ -104,14 +111,14 @@ if (isset($_SESSION['email'])) {
             <div class="square" class=" bi bi-zoom-out" >
               <span class="span"><i class="bi bi-chat-heart "></i></span>
               <h3 class="h3"> Ad ad velit qui</h3>
-              <p class="p">Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+              <p class="p">Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
             </div>
           </div>
 
         </div>
 
       </div>
-    </section>
+    </section> 
      </div>
 
 
@@ -127,8 +134,8 @@ if (isset($_SESSION['email'])) {
   <div class="main-div">
     <br>
     <div class="event-title">EVENTS</div>
-    <h1 class="event-name">Organize Your Events in our Restaurant</h1>
     <div class="fade-in-image">
+      <h1 class="event-name">Organize Your Events in our Restaurant</h1>
     <ul class="slider">
       <div class="event-main">
         <div class="event-left"><img src="assets/img/event-custom.jpg"></div>
@@ -208,7 +215,8 @@ if (isset($_SESSION['email'])) {
 
 
   <!-- Chefs -->
-  <div><section id="chefs" class="chefs">
+  <div >
+    <section  class="chefs">
       <div class="container" data-aos="fade-up">
   
         <div class="section-title">
@@ -280,7 +288,8 @@ if (isset($_SESSION['email'])) {
         </div>
   
       </div>
-    </section> </div>
+    </section> 
+  </div>
 
 
   <!-- Contact us -->
@@ -292,6 +301,13 @@ if (isset($_SESSION['email'])) {
   <div> </div>
 
 
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
