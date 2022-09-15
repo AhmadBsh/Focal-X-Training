@@ -1,3 +1,7 @@
+ <?php
+session_start();
+if (isset($_SESSION['email'])) {
+?> 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +14,7 @@
   <title>Restaurantly</title>
 
   <!-- Main Css File -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- BootStrap Files -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -45,11 +49,7 @@
 
 
   <!-- Events -->
-  <div> 
-    <h1>rama</h1>
-    <h2>hi</h2>
-    <h3>hi back</h3>
-  </div>
+  <div> </div>
 
 
   <!-- Gallery -->
@@ -72,3 +72,10 @@
 </body>
 
 </html>
+
+ <?php
+} else {
+    header("Location: index.php");
+    exit();
+}
+?> 
