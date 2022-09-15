@@ -2,7 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
 }
- 
+ /*-------START ABOUT --------*/
 body {
     font-family: "Open Sans", sans-serif;
     background: #0c0b09;
@@ -144,3 +144,105 @@ body {
   .whyus .square:hover p{
     color: black;
   }
+  /*-----------END ABOUT---------->
+  /*----------- START CHEFS----------->*/
+  body{
+font-family: "Trirong", serif ;
+background-color: black;
+color: #fff;
+padding: 80px;
+}
+.h2{
+    color: rgb(255, 197, 125);
+    margin-bottom: 70px;
+}
+.img{
+display: flex;
+justify-content: space-between ;
+gap: 30px;
+overflow: hidden;
+
+background: #343a40;
+}
+.p{
+    font-size: 18px;
+    color: rgb(255, 197, 125);
+    
+}
+
+
+.img-content {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.img .content {
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+  transition: bottom 0.4s;
+
+}
+.h4{
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.img .content .span{
+  font-size: 18px;
+  color: #fff;
+  margin-top: 0px;
+}
+ .media {
+  position: absolute;
+left: 1px;right: 1px;
+  bottom: 0px;
+  height: 60px;
+  transition: bottom ease-in-out 0.4s;
+  text-align: center;
+  
+}
+
+.media {
+  transition: color 0.3s;
+  color: rgb(250, 249, 252);
+  margin: 0 10px;
+  justify-content: space-between;
+  gap: 5px;
+ 
+}
+
+.img .media:hover {
+  color: #cda45e;
+  bottom: 0;
+  transition: bottom ease-in-out 0.6s;
+}
+.img:hover .content{
+    color: #faf9f6;
+    bottom: 70px;
+    transition: bottom 0.7s;
+  }
+  .content .h4:hover{
+    color: #cda45e;
+  }
+  .content .span:hover{
+    color: #cda45e;
+  }
+
+.img .media i {
+  font-size: 18px;
+}
+
+.img .img-content:hover{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 20%, rgba(0, 200, 255, 0) 100%);
+  opacity: 1;
+}
+/*------------------END CHEFS--------------->
