@@ -359,5 +359,146 @@ background: #343a40;
     }
   /* END OF EVENTS */
 
+  /* by nour */
+  body {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    background-color: black;
+  }
+
+  .navbar ul {
+   
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  h1{
+      padding :10px 10px;
+      font-size: 45px;
+  }
+  #header {
+    background: rgba(12, 11, 9, 0.6);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    top: 40px;
+  }
+
+  .navbar a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  color: #fff;
+  font-size: 16px;
+}
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 18px;
+    margin: 0;
+    padding: 10px 0; 
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(79, 86, 104, 0.25);
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  .navbar .dropdown ul li {
+    min-width: 190px;
+  }
+  
+  .navbar .dropdown ul a {
+    padding: 10px 20px;
+    color: #444444;
+  }
+  .navbar .dropdown:hover>ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar .dropdown .dropdown ul {
+    top: 0;
+    left: 165px;
+    visibility: visible;
+  }
+  .navbar .dropdown ul a:hover,
+  .navbar .dropdown ul li:hover>a {
+  color: #cda45e;
+  }
+  a {
+    color: #cda45e;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #d9ba85;
+    text-decoration: none;
+  }
+  .section-title{
+    font-size: 23px;
+    padding: 20px 20px;
+    margin: 10px 20px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+}
+  .contact i{
+     font-size: 20px;
+     float: left;
+     width: 44px;
+     height: 44px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50px;
+     transition: all 0.3s ease-in-out;
+     margin: 5px 5px;
+  }
+   #contact{
+     width: 100%;
+     display:flex ; 
+     justify-content: space-around;
+     flex-wrap: wrap;
+   }
+   #name,#email ,#subject {
+     width:95%;
+     height: 30px; 
+     padding: 10px ;
+     margin-right: 100px;
+     margin: 20px ;
+     border-radius: 8px;
+     background:transparent ;
+   }
+   #message{
+    width:95%;
+    height: 100px; 
+    padding: 10px ;
+    margin-right: 100px;
+    margin: 20px ;
+    border-radius: 8px;
+    background:transparent ;
+   }
+   #button button{
+    background:transparent ;
+    background-color :#d9ba85;
+    color: whitesmoke;
+    width: 200px;
+    height:50px;
+    font-size: 18px;
+    border-radius: 25px;
+    margin-left: 15px;
+
+   }
+  
  
 
