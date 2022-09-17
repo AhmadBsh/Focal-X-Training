@@ -360,11 +360,11 @@ background: #343a40;
   /* END OF EVENTS */
 
   /* by nour */
-  body {
+  /* body {
     font-family: "Open Sans", sans-serif;
     color: #fff;
     background-color: black;
-  }
+  } */
 
   .navbar ul {
    
@@ -376,7 +376,7 @@ background: #343a40;
   .navbar li {
     position: relative;
   }
-  h1{
+  #header h1{
       padding :10px 10px;
       font-size: 45px;
   }
@@ -430,12 +430,12 @@ background: #343a40;
   .navbar .dropdown ul li:hover>a {
   color: #cda45e;
   }
-  a {
+  #header a {
     color: #cda45e;
     text-decoration: none;
   }
   
-  a:hover {
+  #header a:hover {
     color: #d9ba85;
     text-decoration: none;
   }
@@ -444,14 +444,14 @@ background: #343a40;
     padding: 20px 20px;
     margin: 10px 20px;
   }
-  h1,
+  /* h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
     font-family: "Playfair Display", serif;
-}
+} */
   .contact i{
      font-size: 20px;
      float: left;

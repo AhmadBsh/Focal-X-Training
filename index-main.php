@@ -40,7 +40,50 @@ if (isset($_SESSION['email'])) {
 
   
   <!-- navbar -->
-  <div> </div>
+  <div> 
+
+  <header id="header" class="fixed-top d-lg-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="  me-auto me-lg-0"><a href="index.html">Restaurantly</a></h1>
+  
+      <nav id="navbar" class="navbar order-last ">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a  href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a  href="#specials">Specials</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a  href="#chefs">Chefs</a></li>
+          <li><a  href="#gallery">Gallery</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down <i class="fi fi-rr-angle-small-down"></i></span></a>
+
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down<i class="fi fi-rr-angle-right"></i></span> </a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a  href="#contact">Contact</a></li>
+        </ul>
+        
+      
+       </nav>
+       <a  href="#book-a-table" class=" book-a-table-btn scrollto d-none d-lg-flex"> Book a table</a>
+    </div>
+  </header>
+
+  </div>
 
 
   <!-- Home -->
@@ -293,7 +336,51 @@ if (isset($_SESSION['email'])) {
 
 
   <!-- Contact us -->
-  <div> </div>
+  <div> 
+
+  <section class ="contact">
+     <div class="section-title">
+       <h2 >Contact</h2>
+       <p style="color:  #d9ba85; font-size: 37px; margin-top: 5px; margin-bottom: 5px;" >Contact Us</p>
+     </div>
+     <div>
+      <iframe style="border:0; width: 75%; height: 450px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+     </div>
+     <div id ="contact">
+     <div class="container" id="contact-id" >
+       <div class="row mt-5">
+          <div class="col-lg-8">
+             <div class="addres">
+              <i class="fi fi-ss-marker" style="background-color:#d9ba85;"></i>
+              <h3> Location:</h3>
+              <p>A108 Adam Street,New York,NY 535022</p>
+             </div>
+             <div class="open-hour">
+              <i class="fi fi-bs-hourglass" style="background-color:#d9ba85;"></i>
+               <h3> Open Hours:</h3>
+               <p><pre>Monday-Saturda
+       11:00 AM - 2300 PM</pre>
+               </p>
+             </div>
+             <div class="email">
+              <i class="fi fi-rr-envelope" style="background-color:#d9ba85;"></i>
+              <h3>Email:</h3>
+              <p>info@example.com</p>
+            </div>
+            <div class="phone">
+              <i class="fi fi-rs-phone-call"  style="background-color :#d9ba85;"></i>
+              <h3>Call:</h3>
+              <p>+1 5589 55488 55s</p>
+            </div>
+
+          </div>
+       </div>
+     </div>
+    <div class="col-lg-8 mt-5 mt-lg-0" >
+    </div>
+     </div>
+  </section>
+  </div>
 
 
 
