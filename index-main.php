@@ -41,7 +41,6 @@ if (isset($_SESSION['email'])) {
   
   <!-- navbar -->
   <div> 
-
   <header id="header" class="fixed-top d-lg-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
@@ -82,7 +81,6 @@ if (isset($_SESSION['email'])) {
        <a  href="#book-a-table" class=" book-a-table-btn scrollto d-none d-lg-flex"> Book a table</a>
     </div>
   </header>
-
   </div>
 
 
@@ -163,11 +161,181 @@ if (isset($_SESSION['email'])) {
       </div>
     </section> 
      </div>
-
+<!-- End Of About -->
 
   <!-- Menu -->
-  <div> </div>
+  <div class="menu-div">
+    <br>
+    <div class="menu-title">MENU</div>
+    <h1 class="menu-name">Check Our Tasty Menu</h1>
+    <div id="menu-myBtnContainer">
+      <a class="btn active" onclick="filterSelection('all')">All</a>
+      <a class="btn" onclick="filterSelection('Starters')"> Starters</a>
+      <a class="btn" onclick="filterSelection('Salads')"> Salads</a>
+      <a class="btn" onclick="filterSelection('Specialty')">Specialty</a>
+    </div>
+    
+    <div class="menu-container">
+      
+      <div class="filterDiv Starters">
+        <div class="img">
+          <img src="assets/img/menu/lobster-bisque.jpg" class="img-menu">
+        </div>
+        <div class="menu-food">
+          <div class="title-price">
+            <a href="#" class="menu-food-1" >Lobster Bisque</a> <span>$5.95</span>
+          </div>
+          <div class="menu-maked">
+           Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+      </div>
+    
+  
+      <div class="filterDiv Salads">
+        <img src="assets/img/menu/caesar.jpg"class="img-menu">
+        <div class="menu-food">
+          <div class="title-price">
+          <a href="#"class="menu-food-1" >Caesar Selections</a><span class="menu-line"></span><span>$8.95</span>
+        </div>
+          <div class="menu-maked">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+         </div>
+      
+      <div class="filterDiv Starters"> 
+        <img src="assets/img/menu/cake.jpg"class="img-menu">
+        <div class="menu-food">
+          <div class="title-price">
+          <a href="#" class="menu-food-1">Crab Cake</a><span class="menu-line"></span><span>$7.95</span>
+        </div>
+          <div class="menu-maked">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+         
+      </div>
+      <div class="filterDiv Salads">
+         <img src="assets/img/menu/greek-salad.jpg"class="img-menu">
+         <div class="menu-food">
+          <div class="title-price">
+          <a href="#" class="menu-food-1">Greek Salad</a><span class="menu-line"></span><span>$9.95</span>
+          </div>
+          <div class="menu-maked">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+         
+        </div>
+      <div class="filterDiv Specialty">
+         <img src="assets/img/menu/bread-barrel.jpg"class="img-menu">
+         <div class="menu-food">
+          <div class="title-price">
+          <a href="#" class="menu-food-1">Bread Barrel</a><span class="menu-line"></span><span>$6.95</span>
+           </div>
+          <div class="menu-maked">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div> 
+        </div>
 
+      <div class="filterDiv Salads">
+         <img src="assets/img/menu/spinach-salad.jpg"class="img-menu">
+         <div class="menu-food">
+          <div class="title-price">
+          <a href="#" class="menu-food-1">Spinach Salad</a><span class="menu-line"></span><span>$9.95</span>
+           </div> 
+        
+         <div class="menu-maked">
+           Lorem, deren, trataro, filede, nerada
+         </div>
+        </div>
+        </div>
+
+      <div class="filterDiv Specialty">
+        <img src="assets/img/menu/tuscan-grilled.jpg"class="img-menu">
+        <div class="menu-food">
+          <div class="title-price">
+          <a href="#" class="menu-food-1">Tuscan Grilled</a><span class="menu-line"></span><span>$9.95</span>
+           </div> 
+        
+         <div class="menu-maked">
+           Lorem, deren, trataro, filede, nerada
+         </div>
+        </div>
+      </div>
+
+      <div class="filterDiv Specialty">
+         <img src="assets/img/menu/lobster-roll.jpg"class="img-menu">
+         <div class="menu-food">
+          <div class="title-price">
+          <a href="#" class="menu-food-1">Lobster Roll</a><span class="menu-line"></span><span>$12.95</span>
+          </div> 
+         <div class="menu-maked">
+           Lorem, deren, trataro, filede, nerada
+         </div>
+        </div>
+        </div>
+        
+      <div class="filterDiv Starters">
+         <img src="assets/img/menu/mozzarella.jpg"class="img-menu">
+         <div class="menu-food">
+          <div class="title-price">
+          <a href="#" class="menu-food-1">Mozzarella Stick</a><span class="menu-line"></span><span>$4.95</span>
+          </div>
+           <div class="menu-maked">
+            Lorem, deren, trataro, filede, nerada
+          </div> 
+        </div>
+         
+        </div>
+     
+    </div>
+    </div>
+    <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+      
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+      function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+var btnContainer = document.getElementById("menu-myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+  
+<!-- End Of Menu -->
 
   <!-- Specials -->
   <div> </div>
